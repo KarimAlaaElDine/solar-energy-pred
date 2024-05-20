@@ -1,0 +1,7 @@
+scikit-learn==1.2.2
+tensorflow==2.10.0
+openmeteo_requests==1.2.0
+requests_cache==1.2.0
+retry_requests==2.0.0
+numpy==1.25.2
+pandas==2.0.3
