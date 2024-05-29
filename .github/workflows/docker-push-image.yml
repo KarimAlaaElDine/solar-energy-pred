@@ -6,8 +6,19 @@ on:
       - main
 
 jobs:
+ test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      
+      - name: Run tests
+        run: python test.py
   build:
     runs-on: ubuntu-latest
+    needs: test
 
     steps:
       - name: Checkout repository
