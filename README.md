@@ -1,5 +1,7 @@
 # Solar energy production for Danish Power Plants
 
+![Test and Deploy](https://github.com/KarimAlaaElDine/solar-energy-pred/actions/workflows/docker-push-image.yml/badge.svg)
+
 This projects makes use of energy production data provided by Energinet of the Danish Ministry of Climate and Energy to make solar power production predictions in the DK2 energy zone in Denmark. 
 
 This project predicts energy production for the next 8 days using data that is 10 days old. Therefore, while the model predicts future dates based on the latest available data, the predictions may appear as past dates in the current context. This approach helps validate model accuracy and improve future forecasting while also providing data that is not yet available even if it is for past dates.
