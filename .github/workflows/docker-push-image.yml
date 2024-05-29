@@ -6,16 +6,16 @@ on:
       - main
 
 jobs:
- test:
+  test:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      
       - name: Run tests
         run: python test.py
+
   build:
     runs-on: ubuntu-latest
     needs: test
@@ -45,7 +45,3 @@ jobs:
 
       - name: Logout from Docker Hub
         run: docker logout
-
-      
-    
-      
